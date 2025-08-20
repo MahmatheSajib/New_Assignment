@@ -1,0 +1,79 @@
+
+/* Sidebar container */
+.sidebar {
+  height: 100vh; /* full viewport height */
+  width: 200px;
+  background: #d4edda;
+  border-right: 1px solid #991d1d;
+  padding: 20px;
+  transition: width 0.3s;
+  overflow: hidden; /* hide content when collapsed */
+}
+
+/* Collapsed sidebar */
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+/* Toggle image */
+.toggle-icon {
+  width: 30px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+/* Rotate the icon when collapsed */
+.toggle-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Avatar image */
+.sidebar-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Username */
+.sidebar-username {
+  font-weight: bold;
+}
+
+/* Menu styles */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.01s;
+}
+
+.sidebar-menu li:hover {
+  background: #4047ad;
+  color: white;
+  border-radius: 50px;
+}
