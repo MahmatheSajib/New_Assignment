@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./components/sidebar";
 import Profile from "./components/profile";
-//import Article from "./components/Article";  
+import Article from "./components/Article";  
 import "./App.css";
 
 function App() {
@@ -12,11 +12,10 @@ function App() {
       <Sidebar onSelect={setView} />
       <div className="main">
         {view === "profile" && <Profile />}
-        
+        {view === "articles" && <Article />}
       </div>
     </div>
   );
 }
 
-export default App;/*
-{view === "articles" && <Article />}*/
+export default App;

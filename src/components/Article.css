@@ -1,0 +1,21 @@
+.article-container {
+  padding: 20px;
+  background: #b9fbc0;
+  border-radius: 8px;
+}
+
+.article-container h2 {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
