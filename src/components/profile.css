@@ -1,0 +1,27 @@
+.profile-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;    /* content গুলো উপরে নিচে থাকবে */
+  align-items: center;       /* horizontally center */
+  justify-content: flex-start; /* উপরের দিক থেকে শুরু হবে */
+  height: 50vh;             /* পুরো viewport height */
+  background-color: #b9fbc0; /* হালকা সবুজ ব্যাকগ্রাউন্ড */
+  border-radius: 8px;        /* কোণাগুলো গোল হবে */
+  gap: 4px;                  /* element গুলোর মাঝে ছোট gap */
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;             /* height আর width সমান */
+  border-radius: 50%;        /* গোল করে দেবে */
+  object-fit: cover;         /* ছবি কেটে ফিট করবে */
+  margin-bottom: 6px;        /* ছবির নিচে কম gap */
+  border: 3px solid #fff;    /* সাদা বর্ডার দিলে সুন্দর দেখাবে */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* হালকা শ্যাডো */
+}
+
+.profile-container p,
+.profile-container h2,
+.profile-container h3 {
+  margin: 2px 0; /* লেখাগুলোর মধ্যে কম gap */
+}
