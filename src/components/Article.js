@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Status from "./status";
-//import Pagination from "./pagination";
+import Pagination from "./pagination";
 import "./Article.css";
 
 export default function Article() {
@@ -42,7 +42,11 @@ export default function Article() {
           ))}
         </tbody>
       </table>
-
+      <Pagination
+        currentPage={currentPage}
+        totalPages={Math.ceil(articles.length / articlesPerPage)}
+        onPageChange={setCurrentPage}
+      />
      
     </div>
   );
